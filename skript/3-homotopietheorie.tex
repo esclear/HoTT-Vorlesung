@@ -63,7 +63,7 @@ sondern nur Gleichheit.
     \ast&:S^1 \\
     l&:\ast =_{S^1}\ast
   \end{align*}
-  Das heißt für jeden abhängigen Typ $B:S^1\to\mU$ reicht es $b:B(\ast)$ und $b_l:b =_l^B b$ vorzugeben,
+  Das heißt für jeden abhängigen Typ $B:S^1\to\mU$ reicht es, $b:B(\ast)$ und $b_l:b =_l^B b$ vorzugeben,
   um eine abhängige Funktion $s:\prod_{x:S^1}B(x)$ zu definieren.
   Es gibt also eine Funktion:
   \[
@@ -225,7 +225,7 @@ Zunächst erweitern wir die Definition von Homotopien auf abhängige Typen:
   \]
   Und damit haben wir $p_H\colonequiv \tilde{\tilde{H}}(s) : f=g$.
 
-  Nun können wir durch kommutieren von $\mathrm{ap}$ und $\circ$ sehen, dass gilt:
+  Nun können wir durch Kommutieren von $\mathrm{ap}$ und $\circ$ sehen, dass gilt:
   \begin{align*}
     \mathrm{hap}(\varphi(H))&\equiv (x:A)\mapsto\mathrm{ap}(f\mapsto f(x),\varphi(H)) \\
                             &\equiv (x:A)\mapsto\mathrm{ap}(f\mapsto f(x),\mathrm{ap}((i:I)\mapsto (y:A)\mapsto \tilde{H}(y)(i),s)) \\
@@ -307,7 +307,7 @@ Die Paare $(n,k):\N\times\N$ darf man sich als Differenz ``$n-k$'' vorstellen, w
   \[
     s(n,k)\colonequiv (\sucN(n),k) 
   \]
-  und den Nachweis der Wohldefiniertheit:
+  Fehlt noch der Nachweis der Wohldefiniertheit:
   Sei $(n,k)\sim_\Z (n',k')$, dann gilt $n+k'=n'+k$, also auch $\sucN(n+k')=\sucN(n'+k)$.
   Letzteres ist nach der Definition der Addition $\sucN(n)+k'=\sucN(n')+k$, also gilt $s(n,k)\sim_\Z s(n',k')$.
 \end{definition}
@@ -441,7 +441,7 @@ Nun werden wir sehen, dass Ähnliches für den Großteil der Konstruktionen gilt
 
 Wenn man bedenkt, dass es für jeden Typ $A$ eine Äquivalenz $A\simeq \sum_{x:A}\eins$ gibt, wird klar, dass für abhängige Summen
 kein direktes Analogon zu \cref{lem:pi-n-type} gelten kann. Weiter wäre das seltsam, weil der Spezialfall von Produkten symmetrisch ist.
-Es liegt also Nahe, für abhängige Summen auch Bedingungen an die Basis zu stellen, um den Abschneidungslevel zu erhalten:
+Es liegt also nahe, für abhängige Summen auch Bedingungen an die Basis zu stellen, um den Abschneidungslevel zu erhalten:
 
 \begin{lemma}
   \label{lem:sum-n-type}
