@@ -236,7 +236,7 @@ Es sollen also für mit $\N\mathrm{E}$ definierte Funktionen gelten:
   \ind{\N}(P,\mathrm{IA},\mathrm{IS})(0_{\N})\equiv \mathrm{IA} \\
   \text{(Für $n:\N$) } \ind{\N}(P,\mathrm{IA},\mathrm{IS})(\sucN(n))\equiv \mathrm{IS}(n,\ind{\N}(P,\mathrm{IA},\mathrm{IS})(n))
 \]
-und damit für die Rekursion mit den Bezeichnern aus \cref{def:rekursion}:
+und damit für die Rekursion mit den Bezeichnern aus \Cref{def:rekursion}:
 \[
   \rec{\N}(A,f_0,f_s)(0)\equiv f_0 \\
   \rec{\N}(A,f_0,f_s)(\sucN(n))\equiv f_s(n, \rec{\N}(A,f_0,f_s)(n))
@@ -907,7 +907,7 @@ Um $b_x$ mit $b_y$ zu vergleichen, können wir es entlang einer Gleichheit $p:x=
   \]
   Nun sind $b_x,b'_x:B(x)$ noch frei wählbar, also kann wieder Gleichheitsinduktion angewandt und der gesuchte Term auf $\refl_{(x,b_x)}$ festgelegt werden.
 \end{beweis}
-Für die Gleichheit in abhängigen Summen gibt es auch eine Aussage wie \cref{lem:produkt-gleich}, der wir uns jetzt aber erstmal nicht zuwenden.
+Für die Gleichheit in abhängigen Summen gibt es auch eine Aussage wie \Cref{lem:produkt-gleich}, der wir uns jetzt aber erstmal nicht zuwenden.
 
 \subsection{Kontrahierbarkeit und Aussagen}
 Wir beschäftigen uns zunächst mit Gleichheit von Funktionen.
@@ -932,7 +932,7 @@ Letztere Aussage hat einen eigenen Namen und wird von uns im Folgenden als Axiom
 Wir werden uns jeweils merken, für welche Aussagen wir dieses Axiom brauchen.
 
 \begin{bemerkung}
-  Mit $\mathrm{FunExt}$ sind die Funktionen $\mathrm{curry}$ und $\mathrm{uncurry}$ aus \cref{def:currying} zueinander invers.
+  Mit $\mathrm{FunExt}$ sind die Funktionen $\mathrm{curry}$ und $\mathrm{uncurry}$ aus \Cref{def:currying} zueinander invers.
 \end{bemerkung}
 
 Was wir bereits über Gleichheit wissen und mit Gleichheiten machen können, lässt sich leicht auf Homotopien jeweils punktweise übertragen:
@@ -1043,7 +1043,7 @@ Es gibt einen überraschenderweise kontrahierbaren Typen, der uns noch begleiten
   \[
     \Sigma_=:\prod_{p:x=x'}\mathrm{tr}_{x:A\yields x=y}(p)(q)=q' \to (x,q)=(x',q')
   \]
-  Den Transport haben wir in \cref{lem:transp-lpath} berechnet und können einsetzen:
+  Den Transport haben wir in \Cref{lem:transp-lpath} berechnet und können einsetzen:
   \[
     (q\kon q'^{-1})^{-1} \kon q=q' \to (x,q)=(x',q')
   \]
@@ -1132,7 +1132,7 @@ Jetzt wollen wir noch den Abschnitt mit zwei Bemerkungen zur Äquivalenz beenden
   Seien $A,B$ Typen und $f:A\to B$.
   Wenn $f$ surjektiv und injektiv ist, dann ist $f$ eine Äquivalenz.
 \end{bemerkung}
-In \cref{sub:aequivalenzen} werden wir beweisen, dass jede Funktion mit einer beidseitigen Inversen auch eine Äquivalenz ist.
+In \Cref{sub:aequivalenzen} werden wir beweisen, dass jede Funktion mit einer beidseitigen Inversen auch eine Äquivalenz ist.
 
 \subsection{Universen}
 Ein \begriff{Universum} kann man sich erstmal als Typ aller Typen vorstellen.

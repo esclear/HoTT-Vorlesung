@@ -89,7 +89,7 @@ Wenn wir also zu einer Funktion $f:A\to B$ eine beidseitige Inverse konstruieren
 \end{bemerkung}
 \begin{beweis}
   Wir zeigen die Aussagen für den Äquivalenzbegriff der Funktion mit Links- und Rechtsinversen.
-  Mit \cref{thm:aequivalenzen} gilt damit das gleiche für die anderen Äquivalenzbegriffe.
+  Mit \Cref{thm:aequivalenzen} gilt damit das gleiche für die anderen Äquivalenzbegriffe.
   \begin{enumerate}
   \item Die Identität ist ihre eigene Links- und Rechtsinverse. Die nötigen Homotopien gelten schon als urteilsmäßige von Funktionen.
   \item Wenn $f:A\to B$ eine Linksinverse $g:B\to A$ und eine Rechtsinverse $h:B\to A$ hat, dann ist bekommen wir mit Bemerkung \labelcref{bem:lrinv-qinv} eine Quasi-Inverse $f^{-1}:B\to A$.
@@ -154,7 +154,7 @@ Vor dem Beweis noch ein Hilfslemma, das wir auch sonst noch wiederverwenden kön
     \prod_{p:x=_A x'}f(p)^{-1}\kon q=q'\to (x,q)=(x',q')
   \]
 \end{lemma}
-\begin{beweis}[von \cref{lem:gleichheit-in-faser}]
+\begin{beweis}[von \Cref{lem:gleichheit-in-faser}]
   Induktion über $p$ und $\sum_=$.
 \end{beweis}
 
@@ -268,7 +268,7 @@ Für einzelne natürliche Zahlen etwa:
 \end{beweis}
 Typischerweise interessiert man sich für eine vollständige Charakterisierung der Gleichheitstypen eines Typs.
 Für die natürlichen Zahlen wäre das ein in $n,k:\N$ abhängiger Typ $B(n,k)$ sodass $B(n,k)\simeq (n=_\N k)$.
-Das wird unser Ziel in \cref{sec:zahlen-gleichheit} sein.
+Das wird unser Ziel in \Cref{sec:zahlen-gleichheit} sein.
 
 Ohne Weiteres können wir bereits für $A,B:\mU_i$ den Typ $A=_{\mU_i}B$ der Gleichheiten zwischen $A$ und $B$ formen.
 Dieser liegt allerdings im nächsthöheren Universum $\mU_{i+1}$, da wir in der Formierungsregel für Gleichheitstypen ``X ist ein Typ'' durch ``$X : \mU_i$'' ersetzen und dafür nur ``$\mU_i : \mU_{i+1}$'' in Frage kommt:
@@ -500,13 +500,13 @@ Mit Univalenz können wir folgern, dass für jeden Typ $A$ die abhängigen Typen
   \[
     \mathrm{fib}_f\equiv \left((x:A)\mapsto f^{-1}(x)\right):A\to \mU
   \]
-  Nach \cref{lem:faser-equiv} ist also bereits diese Konstruktion linksinvers zur vorangegangenen.
+  Nach \Cref{lem:faser-equiv} ist also bereits diese Konstruktion linksinvers zur vorangegangenen.
   Es ist also noch zu zeigen, dass sich die Fasern einer Abbildung zur Domäne aufsummieren, bzw. dass für alle
   $f:A\to B$ gilt:
   \[
     e:\left(\sum_{y:B}(f^{-1}(y))\right) \simeq A
   \]
-  und $f\circ e=\pi_1$ gilt. Wir können mit \cref{lem:pfade-kontrahierbar} berechnen:
+  und $f\circ e=\pi_1$ gilt. Wir können mit \Cref{lem:pfade-kontrahierbar} berechnen:
   \begin{align*}
     \left(\sum_{y:B}(f^{-1}(y))\right) &\simeq \sum_{y:B}\sum_{x:A}f(x)=y \\
                                        &\simeq \sum_{x:A}\sum_{y:B}f(x)=y\\
@@ -545,7 +545,7 @@ Mit Univalenz können wir folgern, dass für jeden Typ $A$ die abhängigen Typen
   Für $f:\prod_{x:A}B(x)\to B'(x)$ gilt: $f$ ist genau dann faserweise Äquivalenz, wenn $\sum f$ Äquivalenz ist.
 \end{lemma}
 \begin{beweis}
-  Nach \cref{lem:faser-summe} sind alle Fasern aller $f_x$ genau dann kontrahierbar, wenn die Fasern von $\sum f$ kontrahierbar sind.
+  Nach \Cref{lem:faser-summe} sind alle Fasern aller $f_x$ genau dann kontrahierbar, wenn die Fasern von $\sum f$ kontrahierbar sind.
 \end{beweis}
 
 \begin{theorem}[Fundamentaler Gleichheitssatz]\index{Fundamentaler Gleichheitssatz}
@@ -561,7 +561,7 @@ Mit Univalenz können wir folgern, dass für jeden Typ $A$ die abhängigen Typen
   \[
     \sum f:\left(\sum_{x:A}a=x\right)\to \left(\sum_{x:A}B(x)\right)
   \]
-  eine Äquivalenz ist. In \cref{lem:pfade-kontrahierbar} haben wir gesehen, dass der linke Typ kontrahierbar ist, also gilt:
+  eine Äquivalenz ist. In \Cref{lem:pfade-kontrahierbar} haben wir gesehen, dass der linke Typ kontrahierbar ist, also gilt:
   \[
     \left(\sum_{x:A}a=x\right)\simeq \eins
   \]
@@ -576,7 +576,7 @@ Mit Univalenz können wir folgern, dass für jeden Typ $A$ die abhängigen Typen
     \Eq{\zwei}(1_\zwei,0_\zwei)&\colonequiv\leer \\
     \Eq{\zwei}(1_\zwei,1_\zwei)&\colonequiv\eins 
   \end{align*}
-  Mit \cref{thm:fundamental-gleichheit} können wir zeigen, dass
+  Mit \Cref{thm:fundamental-gleichheit} können wir zeigen, dass
   \[
     \prod_{x,y:\zwei}(x=_\zwei y)\simeq \Eq{\zwei}(x,y)
   \]
@@ -598,7 +598,7 @@ Mit Univalenz können wir folgern, dass für jeden Typ $A$ die abhängigen Typen
 Es ist also insbesondere $\zwei$ ein 0-Typ bzw. eine Menge.
 
 
-Wir wollen nun noch \cref{lem:faser-equiv} beweisen. Dazu brauchen wir das folgende alternative Induktionsprinzip für Gleichheit:
+Wir wollen nun noch \Cref{lem:faser-equiv} beweisen. Dazu brauchen wir das folgende alternative Induktionsprinzip für Gleichheit:
 
 \begin{lemma}[Pfadinduktion mit Basispunkt]\index{Gleichheitsinduktion mit Basispunkt}\index{Pfadinduktion mit Basispunkt}
   Seien $A:\mU$ und $x:A$ fest gewählt. Für einen abhängigen Typen $C:\prod_{y:A}x=y \to\mU$ reicht es, ein $c:C(x,\refl_x)$ zu konstruieren, um eine abhängige Funktion $\prod_{y:A}\prod_{p:x=y}C(y,p)$ zu erhalten.
@@ -647,9 +647,9 @@ Damit können wir zeigen:
   Letzteres ist allerdings mit $\sum_=$ und $p_y$ gleich zu $(y,c)$.
 \end{beweis}
 
-Damit können wir nun \cref{lem:faser-equiv} beweisen:
+Damit können wir nun \Cref{lem:faser-equiv} beweisen:
 
-\begin{beweis}[von \cref{lem:faser-equiv}]
+\begin{beweis}[von \Cref{lem:faser-equiv}]
   Seien $A:\mU$, $B:A\to\mU$ und $x:A$. Für $\pi_1:\sum_{x:A}B(x)\to A$ gilt:
   \begin{align*}
     \pi_1^{-1}(x)&\equiv \sum_{y:\sum_{x':A}B(x')}\pi_1(y)=x\\
@@ -682,7 +682,7 @@ Damit können wir nun \cref{lem:faser-equiv} beweisen:
   gegeben durch $\refl_n\mapsto \ast$ ist eine faserweise Äquivalenz.
 \end{theorem}
 \begin{beweis}
-  Nach \cref{thm:fundamental-gleichheit} reicht es zu zeigen, dass für jedes $n:\N$ der Typ
+  Nach \Cref{thm:fundamental-gleichheit} reicht es zu zeigen, dass für jedes $n:\N$ der Typ
   \[
     \sum_{l:\N}\Eq{\N}(n,l)
   \]
@@ -731,7 +731,7 @@ werden wir zunächst die Chrakterisierung von Gleichheitstypen in abhängigen Su
   \]
 \end{lemma}
 \begin{beweis}
-  Wir verwenden den Gleichheitssatz, \cref{thm:fundamental-gleichheit}.
+  Wir verwenden den Gleichheitssatz, \Cref{thm:fundamental-gleichheit}.
   Sei dazu der abhängige Typ $\Eq{\sum}:\left(\sum_{x:A}B(x)\right)\to\left(\sum_{x:A}B(x)\right)\to\mU$ gegeben durch $\sum$-Induktion, also für $a,a':A$ und $b:B(a),b':B(a')$:
   \begin{align*}
     \Eq{\sum}((a,b),(a',b'))\colonequiv \sum_{p:a=a'}\transp_B(p)(b)=b'
@@ -786,7 +786,7 @@ werden wir zunächst die Chrakterisierung von Gleichheitstypen in abhängigen Su
   \]
 \end{theorem}
 \begin{beweis}
-  Mit \cref{lem:gleichheit-summe} folgt:
+  Mit \Cref{lem:gleichheit-summe} folgt:
   \[
     \left((H,\mathrm{str})=(H',\mathrm{str}')\right)\simeq \sum_{p:H=H'}\transp_{\mathrm{HalbGrp}}(p)(\mathrm{str})=\mathrm{str}'
   \]

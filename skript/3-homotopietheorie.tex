@@ -10,7 +10,7 @@ Eine Rekursionsregel ist leicht formuliert: Um eine Funktion $f:S^1\to A$ zu def
 Das Induktionsprinzip ist etwas unhandlicher und wir wollen zunächst ein paar Definition machen, die uns die Formulierung erleichtern und schließlich nach der Einführung der neuen Regeln
 das Rekursionsprinzip aus dem Induktionsprinzip folgern.
 
-In \cref{lem:gleichheit-summe} haben wir festgestellt, dass ein Teil einer Gleichheit in einer abhängigen Summe von der Form
+In \Cref{lem:gleichheit-summe} haben wir festgestellt, dass ein Teil einer Gleichheit in einer abhängigen Summe von der Form
 \[
   \transp_B(p)(b)=b'
 \]
@@ -109,7 +109,7 @@ Wir wollen zunächst das Rekursionprinzip für den Kreis herleiten.
   \[
     \rec{S^1}(A,a,a_l)\colonequiv \ind{S^1}(\_\mapsto A, a, \transpconst_{l,a}\kon a_l)
   \]
-  nach \cref{bem:transpconst}:
+  nach \Cref{bem:transpconst}:
   \begin{align*}
     \mathrm{ap}(\rec{S^1}(A,a,a_l),l)&\equiv \mathrm{ap}(\ind{S^1}(\_\mapsto A, a, \transpconst_{l,a}\kon a_l),l) \\
                                      &=\transpconst_{l,a}^{-1}\kon\mathrm{apd}(\ind{S^1}(\_\mapsto A, a, \transpconst_{l,a}\kon a_l),l) \\
@@ -152,7 +152,7 @@ Bevor wir den Kreis weiter kennenlernen, betrachten wir noch einen weiteren, seh
   \[
     \refl =_s s
   \]
-  oder anders formuliert: $\transp_{0_I=\_}(s)(\refl)=s$. Das haben wir aber bereits allgemein geklärt in \cref{lem:transp-lpath}.
+  oder anders formuliert: $\transp_{0_I=\_}(s)(\refl)=s$. Das haben wir aber bereits allgemein geklärt in \Cref{lem:transp-lpath}.
 \end{beweis}
 
 Trotzdem können wir mit dem Intervall etwas neues zeigen.
@@ -243,7 +243,7 @@ Zunächst erweitern wir die Definition von Homotopien auf abhängige Typen:
   \]
   Sei $(f,x\mapsto \refl_{f(x)})$ unser Kontraktionszentrum.
   Dann ist für jedes weitere $(g,H):\sum_{g:\prod_{x:A}B(x)}f\sim g$ durch die Konstruktion am Anfang des Beweises eine Gleichheit $p_H:f=g$ gegeben.
-  Um zu zeigen, dass $(f,x\mapsto \refl_{f(x)})=(g,H)$ gilt, müssen wir nach der Charakterisierung in \cref{lem:gleichheit-summe} also nur noch zeigen:
+  Um zu zeigen, dass $(f,x\mapsto \refl_{f(x)})=(g,H)$ gilt, müssen wir nach der Charakterisierung in \Cref{lem:gleichheit-summe} also nur noch zeigen:
   \[
     \transp_{g\mapsto f\sim g}(p_H)(x\mapsto\refl_{f(x)})=H
   \]
@@ -313,7 +313,7 @@ Die Paare $(n,k):\N\times\N$ darf man sich als Differenz ``$n-k$'' vorstellen, w
 \end{definition}
 
 \subsection{n-Typen}
-In \cref{def:kontr-aussage-menge} hatten wir bereits kontrahierbare Typen, Aussagen und Mengen definiert.
+In \Cref{def:kontr-aussage-menge} hatten wir bereits kontrahierbare Typen, Aussagen und Mengen definiert.
 Die Mengen haben den alternativen Namen $0$-Typen und zu Aussagen, kann man auch $-1$-Typen und zu kontrahierbaren Typen $-2$-Typen sagen.
 Wir werden in diesem Abschnitt $n$-Typen definieren, für $n=-2,-1,0,1,\dots$.
 Dazu sei zunächst:
@@ -376,7 +376,7 @@ Damit können wir $n$-Typen für jeden Abschneidungslevel $n$ definieren:
   \[
     (a,H),(a',H'):\isContr(A)\equiv\sum_{x:A}\prod_{y:A}x=y
   \]
-  Mit \cref{lem:gleichheit-summe} müssen wir also zeigen:
+  Mit \Cref{lem:gleichheit-summe} müssen wir also zeigen:
   \[
     \sum_{p:a=a'}\transp_{x\mapsto \prod_{y:A}x=y}(p)(H)=H'
   \]
@@ -396,8 +396,8 @@ Damit können wir $n$-Typen für jeden Abschneidungslevel $n$ definieren:
   \[
     \isNType{(n+1)}(A)\equiv \prod_{x,y:A}\isNType{n}(x=_A y)
   \]
-  Für festes $x:A$ ist also mit \cref{lem:pi-n-type} der Typ $\prod_{y:A}\isNType{n}(x=_A y)$ eine Aussage.
-  Mit erneutem Anwenden von \cref{lem:pi-n-type}, ist also auch $\prod_{x:A}\prod_{y:A}\isNType{n}(x=_A y)$ eine Aussage.
+  Für festes $x:A$ ist also mit \Cref{lem:pi-n-type} der Typ $\prod_{y:A}\isNType{n}(x=_A y)$ eine Aussage.
+  Mit erneutem Anwenden von \Cref{lem:pi-n-type}, ist also auch $\prod_{x:A}\prod_{y:A}\isNType{n}(x=_A y)$ eine Aussage.
 \end{beweis}
 
 
@@ -412,11 +412,11 @@ Damit können wir sofort einsehen:
 \end{korollar}
 
 \begin{beweis}
-  Zunächst wissen wir durch \cref{lem:isprop-hlevel}, dass $\isContr(f^{-1}(y))$ für jedes $y:B$ eine Aussage ist.
-  Mit \cref{lem:pi-n-type} wissen wir außerdem, dass das abhängige Produkt über Aussagen wieder eine Aussage ist.
+  Zunächst wissen wir durch \Cref{lem:isprop-hlevel}, dass $\isContr(f^{-1}(y))$ für jedes $y:B$ eine Aussage ist.
+  Mit \Cref{lem:pi-n-type} wissen wir außerdem, dass das abhängige Produkt über Aussagen wieder eine Aussage ist.
 \end{beweis}
 
-Wir haben in \cref{lem:pi-n-type} bereits gesehen, dass die Gesamtheit der $n$-Typen für festes $n$ unter abhängigen Produkten abgeschlossen ist.
+Wir haben in \Cref{lem:pi-n-type} bereits gesehen, dass die Gesamtheit der $n$-Typen für festes $n$ unter abhängigen Produkten abgeschlossen ist.
 Nun werden wir sehen, dass Ähnliches für den Großteil der Konstruktionen gilt, die wir soweit kennen.
 
 \begin{bemerkung}
@@ -440,7 +440,7 @@ Nun werden wir sehen, dass Ähnliches für den Großteil der Konstruktionen gilt
 \end{beweis}
 
 Wenn man bedenkt, dass es für jeden Typ $A$ eine Äquivalenz $A\simeq \sum_{x:A}\eins$ gibt, wird klar, dass für abhängige Summen
-kein direktes Analogon zu \cref{lem:pi-n-type} gelten kann. Weiter wäre das seltsam, weil der Spezialfall von Produkten symmetrisch ist.
+kein direktes Analogon zu \Cref{lem:pi-n-type} gelten kann. Weiter wäre das seltsam, weil der Spezialfall von Produkten symmetrisch ist.
 Es liegt also nahe, für abhängige Summen auch Bedingungen an die Basis zu stellen, um den Abschneidungslevel zu erhalten:
 
 \begin{lemma}
@@ -525,7 +525,7 @@ Letzterer könnte also bestenfalls noch ein $1$-Typ sein. Das ist tatsächlich s
   \[
     \left((A,X)=_{\nType{(n+1)}}(B,Y) \right)\simeq \left(A=_\mU B\right) \simeq (A\simeq B)
   \]
-  Letzteres ist ein Untertyp von $A\to B$, was nach \cref{lem:pi-n-type} ein $n$-Typ ist.
+  Letzteres ist ein Untertyp von $A\to B$, was nach \Cref{lem:pi-n-type} ein $n$-Typ ist.
 \end{beweis}
 
 \subsection{Überlagerungen und $\Omega(S^1)$}
@@ -549,7 +549,7 @@ das uns auch Abbildungen in nicht notwendigerweise 0-abgeschnittene Typen erlaub
   Die Typen $\N_1$ und $\Z'$ sind Mengen.
 \end{bemerkung}
 \begin{beweis}
-  Nach \cref{thm:gleichheit-nat} ist der Typ $\N$ eine Menge und dieser ist äquivalent zu $\N_1$.
+  Nach \Cref{thm:gleichheit-nat} ist der Typ $\N$ eine Menge und dieser ist äquivalent zu $\N_1$.
   Für $\Z'$ führen wir einen Beweis mit der üblichen Methode. Sei dazu $\mathrm{Eq}_{\Z'}:\Z'\to\Z'\to\mU$ gegeben durch:
   \begin{align*}
     \mathrm{Eq}_{\Z'}(0_{\Z'},0_{\Z'})&\colonequiv \eins \\
@@ -563,7 +563,7 @@ das uns auch Abbildungen in nicht notwendigerweise 0-abgeschnittene Typen erlaub
     \sum_{x:\Z'}\mathrm{Eq}_{\Z'}(\mathrm{pos}(n),x)
   \]
   kontrahierbar ist. Per Induktion über $x$ ist das nur noch für $x\equiv \mathrm{pos}(k)$ zu zeigen, da in allen anderen Fällen nur etwas für alle Elemente des leeren Typs zu zeigen ist.
-  Im Fall $x\equiv \mathrm{pos}(k)$ müssen wir allerdings nur zeigen, dass ein Element $(k,p):\sum_{k:\N_1}n=k$ gleich $(n,\refl)$ ist - das können wir mit \cref{lem:pfade-kontrahierbar} zeigen.
+  Im Fall $x\equiv \mathrm{pos}(k)$ müssen wir allerdings nur zeigen, dass ein Element $(k,p):\sum_{k:\N_1}n=k$ gleich $(n,\refl)$ ist - das können wir mit \Cref{lem:pfade-kontrahierbar} zeigen.
 \end{beweis}
 
 \begin{bemerkung}
@@ -717,7 +717,7 @@ konstruieren.
   \[
     \transp_{(x:S^1)\mapsto \tilde{S^1}(x)\to \ast=x}(l)(k\mapsto l^k)=(k\mapsto l^k)
   \]
-  Analog zum beweis von \cref{lem:ext-windungszahl} ergibt sich:
+  Analog zum beweis von \Cref{lem:ext-windungszahl} ergibt sich:
   \begin{align*}
     \transp_{(x:S^1)\mapsto \tilde{S^1}(x)\to \ast=x}(l)(k\mapsto l^k) &=\transp_{\ast=\_}(l) \circ (k\mapsto l^k) \circ \transp_{\tilde{S^1}}(l^{-1}) \\
                                                                           &=(p\mapsto p\kon l) \circ (k\mapsto l^k) \circ \transp_{\tilde{S^1}}(l^{-1}) \\
@@ -1109,7 +1109,7 @@ Damit können wir sehen, dass Abbildungen $S^n\to A$ nichts anderes sind als ite
     (\zwei\to^\ast A)\simeq A
   \]
   Da es sich um punktierte Abbildunge handelt, ist die linke Seite nichts anderes als $(\eins\to A)\simeq A$.
-  Für den Induktionsschritt verwenden wir \cref{thm:adjunktion-schleifenraum}:
+  Für den Induktionsschritt verwenden wir \Cref{thm:adjunktion-schleifenraum}:
   \begin{align*}
     (S^{n+1}\to^\ast A)&\equiv (\Sigma S^n\to^\ast A) \\
     &\simeq (S^n\to^\ast \Omega A) \\
@@ -1118,7 +1118,7 @@ Damit können wir sehen, dass Abbildungen $S^n\to A$ nichts anderes sind als ite
 \end{beweis}
 
 
-In \cref{lem:schleifenraum-n-typ} hatten wir gesehen, dass $n+1$-Typen genau die Typen mit $n$-Typen $\Omega(A,x)$.
+In \Cref{lem:schleifenraum-n-typ} hatten wir gesehen, dass $n+1$-Typen genau die Typen mit $n$-Typen $\Omega(A,x)$.
 Das funktioniert in eine Richtung sogar für iterierte Schleifenräume:
 \begin{lemma}
   Sei $n\geq -1$. Ein Typ $A$ ist genau dann ein $n$-Typ, wenn für alle $x:A$ der Typ $\Omega^{n+1}(A,x)$ kontrahierbar ist.
@@ -1127,7 +1127,7 @@ Das funktioniert in eine Richtung sogar für iterierte Schleifenräume:
   Sei $n\equiv -1$. Dann ist zu zeigen: $A$ ist eine Aussage, wenn $A$ kontrahierbar ist. Andererseits kann mit $x:A$ gezeigt werden, dass die Aussage $A$ auch kontrahierbar ist.
   
   Für den Induktionsschritt müssen wir zeigen: $A$ ist genau dann ein $(n+1)$-Typ, wenn $\Omega^{n+2}(A,x)$ für alle $x:A$ kontrahierbar ist.
-  Nach \cref{lem:schleifenraum-n-typ} reicht es zu zeigen, dass die Kontrahierbarkeit der $\Omega^{n+2}(A,x)$ äquivalent dazu ist, dass jedes $\Omega(A,x)$ ein $n+1$ Typ ist.
+  Nach \Cref{lem:schleifenraum-n-typ} reicht es zu zeigen, dass die Kontrahierbarkeit der $\Omega^{n+2}(A,x)$ äquivalent dazu ist, dass jedes $\Omega(A,x)$ ein $n+1$ Typ ist.
   Nach der Induktionshypothese ist dieser Typ genau dann ein $(n+1)$-Typ, wenn
   $\Omega^{n+1}(\Omega(A,x),p)$ für jedes $p:\Omega(A,x)$ kontrahierbar ist.
 
@@ -1147,7 +1147,7 @@ Das funktioniert in eine Richtung sogar für iterierte Schleifenräume:
   Folgt aus dem Lemma und \Cref{kor:schleifenraum-abbildungen}.
 \end{beweis}
 
-\begin{beweis}[\cref{thm:n-truncation}]
+\begin{beweis}[\Cref{thm:n-truncation}]
   \begin{enumerate}
   \item Per Konstruktion ist der Raum der punktierten Abbildungen $S^{n+1}\to^\ast\|A\|_n$ kontrahierbar: Als Kontraktionszentrum wählen wir die konstante Abbildung $c_\ast\colonequiv x\mapsto \ast $, die durch $\refl_\ast$ punktiert ist.
     Für eine punktierte Abbildung $(r,p_r):(S^{n+1})\to^{\ast}(\|A\|_n,\ast)$ müssen wir zunächst eine Homotopie $r\sim c_\ast$ finden.
@@ -1166,7 +1166,7 @@ Das funktioniert in eine Richtung sogar für iterierte Schleifenräume:
     \item Für alle $r:S^{n+1}\to \|A\|_n$, $r':\prod_{x:S^{n+1}}B(r(x))$ und jedes $x:S^{n+1}$ eine abhängige Gleichheit $r(x)=_{\mathrm{Speiche}(x)}^B N_{r,r'}$.
     \end{itemize}
     Die Daten für Narben und Speichen müssen wir also aus der $n$-Abgeschnittenheit von $B$ herleiten, um das gewünschte Induktionprinzip zu erhalten.
-    Narbe und Speichen in $B(x)$  erhalten wir aber genau aus der $n$-Abgeschnittenheit der $B(x)$ und \cref{kor:n-abgeschnitten-kontrahierbarkeit}.
+    Narbe und Speichen in $B(x)$  erhalten wir aber genau aus der $n$-Abgeschnittenheit der $B(x)$ und \Cref{kor:n-abgeschnitten-kontrahierbarkeit}.
     
   \end{enumerate}
 \end{beweis}
@@ -1285,7 +1285,7 @@ Daraus kann man mit der Fasersequenz interessante Schlüsse ziehen.
 \begin{beweis}
   Da wir zeigen wollen, dass etwas eine Äquivalenz für alle $x:A$ ist, wollen wir ein abhängige Funktion in einem $-1$-abgeschnittenen abhängigen Typen $P:A\to\mU$ konstruieren.
   Äquivalen können wir also auch $P:A\to (-1)\hbox{-}\mathrm{Type}$ konstruieren.
-  Da $(-1)\hbox{-}\mathrm{Type}$ nach \cref{bem:level-of-n-typ} ein $0$-Typ ist, faktorisiert $P$ über den kontrahierbaren Typ $\|A\|_0$,
+  Da $(-1)\hbox{-}\mathrm{Type}$ nach \Cref{bem:level-of-n-typ} ein $0$-Typ ist, faktorisiert $P$ über den kontrahierbaren Typ $\|A\|_0$,
   d.h. wir haben $P':\|A\|_0\to (-1)\hbox{-}\mathrm{Type}$ mit $P'\circ |\_|_0=P$.
   Um $P'$ zu zeigen, reicht es das etwa für $|\ast|_0$ zu machen. Aber $P'(|\ast|_0)$ ist einfach die Aussage, dass $\mu(\ast,\_)$ und $\mu(\_,\ast)$ Äquivalenzen sind und das stimmt, weil sie homotop zur Identität sind.
 \end{beweis}
